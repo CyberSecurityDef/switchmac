@@ -10,7 +10,7 @@ void help(void){
     printf("OPTIONS:\n\t");
     printf("-r\tRandom change mac address\n\t");
     printf("-g\tGet mac address\n\t");
-    printf("-m\tAdd mac address\n\t");
+    printf("-s\tSet mac address\n\t");
     printf("-h\tUsing help\n");
     printf("EXAMPLES:\n\t");
     printf("switchmac -r eth0\n\t");
@@ -32,7 +32,7 @@ int main(int argc, char **argv){
                 else
                     perror("Set mac");
                 return 0;
-            case 'm' :
+            case 's' :
                 if(getmac(mac_addr, MAC_SIZE, argv[3]) != EOF && setmac(argv[2], argv[3]) != EOF){
                     printf("Current mac address %s: %s\n", argv[3], mac_addr);
                     printf("New mac address %s: %s\n", argv[3], argv[2]);
