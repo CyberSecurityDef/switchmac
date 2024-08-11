@@ -21,9 +21,9 @@ Using
 	OPTIONS:
 		-r	Random change mac address
 		-g	Get mac address
-		-m	Add mac address
+		-s	Add mac address
 		-h 	Using help	
 	EXAMPLES:
 		switchmac -r eth0
-		switchmac -m 50:2a:14:af:b5:A4 eth0
+		switchmac -s 50:2a:14:af:b5:A4 eth0
 	
